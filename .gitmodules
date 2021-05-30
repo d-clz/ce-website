@@ -1,9 +1,9 @@
 [submodule "ce-frontend"]
-    path = ce-frontend
-    url = https://github.com/d-clz/ce-frontend.git
+	path = ce-frontend
+	url = git@github.com:d-clz/ce-frontend.git
 [submodule "ce-admin"]
-    path = ce-admin
-    url = https://github.com/d-clz/ce-admin.git
+	path = ce-admin
+	url = git@github.com:d-clz/ce-admin.git
 [submodule "ce-backend"]
-    path = ce-backend
-    url = https://github.com/d-clz/ce-backend.git
+	path = ce-backend
+	url = git@github.com:d-clz/ce-backend.git

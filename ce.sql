@@ -29,8 +29,18 @@ CREATE TABLE `image` (
   `createAt` datetime DEFAULT NULL,
   `filename` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `image`
+--
+
+LOCK TABLES `image` WRITE;
+/*!40000 ALTER TABLE `image` DISABLE KEYS */;
+INSERT INTO `image` VALUES (46,'public/images/vivexelt_pic-1624278139471.png','1','2021-06-21 12:22:19','vivexelt_pic-1624278139471.png');
+/*!40000 ALTER TABLE `image` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `post`
@@ -53,6 +63,16 @@ CREATE TABLE `post` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `post`
+--
+
+LOCK TABLES `post` WRITE;
+/*!40000 ALTER TABLE `post` DISABLE KEYS */;
+INSERT INTO `post` VALUES (68,'Introduction to Virtual Exchange','Introduction to Virtual Exchange','https://www.youtube.com/watch?v=uzctYHu69zE','public/images/vivexelt_pic-1620717127093.jpg','2021-05-11 07:12:07','Introduction to Virtual Exchange','vivexelt_pic-1620717127093.jpg'),(69,'What is Virtual Exchange?','This video defines virtual exchange by highlighting important themes and components, in addition to the knowledge and skills virtual exchange participants gain.','https://www.youtube.com/watch?v=KxunF4cZPdw','public/images/vivexelt_pic-1620717188449.jpg','2021-05-11 07:13:08','What is Virtual Exchange?','vivexelt_pic-1620717188449.jpg'),(70,'How to Take Online Classes - Study Tips - Distance Learning','Are you taking classes online? Do you need help figuring out Distance Learning? Socratica Friends, we’re here to help.  You don’t have to be in a classroom to be a Great Student. But there are some important differences about the best ways to study for Online Courses. ','https://www.youtube.com/watch?v=OSKhBenEI30','public/images/vivexelt_pic-1620717286321.jpg','2021-05-11 07:14:46','How to Take Online Classes - Study Tips - Distance Learning','vivexelt_pic-1620717286321.jpg');
+/*!40000 ALTER TABLE `post` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `user`
 --
 
@@ -67,6 +87,16 @@ CREATE TABLE `user` (
   UNIQUE KEY `username_UNIQUE` (`username`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user`
+--
+
+LOCK TABLES `user` WRITE;
+/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` VALUES (2,'admin','$2a$10$CxyMOaX00TRiElM1GY5uEeMBStxA4EHmlvDokuAF7jaiAWfTNENyO');
+/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -77,4 +107,4 @@ CREATE TABLE `user` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-06-20 18:32:12
+-- Dump completed on 2021-06-21 16:34:12
